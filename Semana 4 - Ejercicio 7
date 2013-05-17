@@ -1,0 +1,21 @@
+#coding:utf-8
+"""
+Semana 4 - Ejercicio 7
+Escriba un programa que pida los coeficientes de una ecuacion de primer
+grado (a x + b = 0) y escriba la solución.
+Se recuerda que una ecuación de primer grado puede no tener solución, tener
+una solución unica, o que todos los números sean solución. Se recuerda
+que la fórmula de las soluciones es x = -b / a
+"""
+
+print 'Ecuación a x + b = 0'
+a = float(raw_input('Escriba el valor del coeficiente a: '))
+b = float(raw_input('Escriba el valor del coeficiente b: '))
+
+if a != 0 and b != 0:
+    x = - b / a
+    print 'La solución de la ecuación es', x
+elif a == 0 and b != 0:
+    print 'Sin solución'
+elif a == 0 and b == 0:
+    print 'Todos los números son solución'
