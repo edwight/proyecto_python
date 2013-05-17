@@ -1,0 +1,20 @@
+#coding:utf-8
+"""
+Semana 4 – Ejercicio 10
+Escriba un programa que pida una distancia en centímetros y que escriba esa distancia
+en kilómetros, metros y centímetros (escribiendo solamente las unidades necesarias).
+Estos son algunos ejemplos de posibles respuestas:
+"""
+def main():
+    print 'Distancia en cm Distancia en km, m y cm'
+
+    def distancia(cm):
+        mt = cm / 100
+        km =  mt / 1000
+        return mt, km
+
+    num1 = int(raw_input('Escriba la Distancia en cm: '))
+    mt, km = distancia(num1)
+    print '%2d cm, %d mt, %d km' %(num1, mt, km)
+
+main()
