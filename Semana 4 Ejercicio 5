@@ -1,0 +1,23 @@
+#coding:utf-8
+"""
+Semana 4 Ejercicio 5
+Escriba un programa que pida tres números y que escriba si son los tres
+iguales, si hay dos iguales o si son los tres distintos.
+"""
+
+print 'Comparador de tres números'
+num1 = int(raw_input('Escriba un número: '))
+num2 = int(raw_input('Escriba otro número: '))
+num3 = int(raw_input('Escriba otro número más: '))
+
+if (num1 == num2) and (num1 == num3) :
+    print 'Ha escrito tres veces el mismo número.'
+
+elif num1 != num2 and num1 != num3 and num2 != num3 :
+    print 'Los tres números que ha escrito son distintos.'
+
+elif (num1 == num2) and (num1 != num3) or (num1 == num3) and (num1 != num2) or (num2 == num3) and (num2 != num1):
+    print 'Ha escrito uno de los números dos veces.'
+
+else:
+    print 'valor incorrecto'
