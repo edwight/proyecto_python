@@ -1,0 +1,30 @@
+#coding:utf-8
+"""
+Semana 4 – Ejercicio 9
+Escriba un programa que pregunte primero si se quiere calcular el área de un triángulo
+o la de un círculo. Si se contesta que se quiere calcular el área de un triángulo,
+el programa tiene que pedir entonces la base y la altura y escribir el área.
+Si se contesta que se quiere calcular el área de un círculo, el programa tiene que pedir
+entonces el radio y escribir el área.
+Se recuerda que el área de un triángulo es base por altura dividido por 2 y que el área
+de un círculo es Pi (aproximadamente 3,141592) por el radio al cuadrado.
+
+"""
+def main():
+    print 'Cálculo de áreas - Elija una opcion'
+    print '1- calcular el área de un triángulo'
+    print '2- calcular el área de un círculo'
+    opcion = int(raw_input(''))
+    if opcion == 1:
+        base = float(raw_input('Escriba la base: '))
+        altura = float(raw_input('Escriba la altura: '))
+        area = (base * altura) / 2.0
+        print 'Un triángulo de base %.2f y altura %.2f tiene un área de %0.2f' %(base, altura, area)
+    if opcion == 2:
+        radio = float(raw_input('Escriba el radio: '))
+        area = 3.141592 * radio**2
+        print 'Un círculo de radio %.2f tiene un área de %.2f ' %(radio, area)
+    else:
+        print 'opcion incorrecta'
+
+main()
